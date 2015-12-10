@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="cursorRes" format="reference"></attr>
+    <attr name="animationType">
+        <enum name="DEFAULT" value="0"></enum>
+        <enum name="TRANSLATE" value="1"></enum>
+    </attr>
+    <attr name="durationLarge" format="integer"></attr>
+    <attr name="durationSmall" format="integer"></attr>
+    <attr name="durationTranslate" format="integer"></attr>
+
+    <declare-styleable name="TVMetroRelativeLayout">
+        <attr name="cursorRes"></attr>
+        <attr name="animationType"></attr>
+        <attr name="durationLarge"></attr>
+        <attr name="durationSmall"></attr>
+        <attr name="durationTranslate"></attr>
+        <attr name="biggerHeight" format="dimension"></attr>
+        <attr name="biggerWidth" format="dimension"></attr>
+        <attr name="shadow" format="dimension"></attr>
+        <attr name="clickSecond" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="ProgressButton">
+        <attr name="foreground" format="color" />
+        <attr name="ButtonTextColor" format="color" />
+        <attr name="ButtonMax" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="ButtonTextSize" format="dimension" />
+        <attr name="text1" format="string" />
+    </declare-styleable>
+
+</resources>

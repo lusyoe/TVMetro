@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.library.TVMetroRelativeLayout
+    android:id="@+id/hot_advertisement_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center_horizontal"
+    android:paddingTop="@dimen/y40"
+    tv:cursorRes="@drawable/cursor_shadow"
+    tv:durationTranslate="11"
+    android:background="@drawable/background_common"
+    >
+
+    <!-- 超大图 -->
+
+    <ImageView
+        android:id="@+id/hot_left_top_img"
+        android:layout_width="@dimen/y220"
+        android:layout_height="@dimen/x140"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:nextFocusDown="@+id/hot_left_1_img"
+        android:nextFocusRight="@+id/hot_center_1img"
+        android:nextFocusUp="@+id/title_hotgame"
+        android:scaleType="fitXY"
+        android:src="@drawable/mm_large"
+        android:tag="1"/>
+
+    <!-- 超大图，下面三个位置 -->
+
+    <ImageView
+        android:id="@+id/hot_left_1_img"
+        android:layout_width="@dimen/y72"
+        android:layout_height="@dimen/x68"
+        android:layout_below="@+id/hot_left_top_img"
+        android:layout_marginTop="@dimen/x3"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/mm2"
+        android:tag="2"/>
+
+    <ImageView
+        android:id="@+id/hot_left_2_img"
+        android:layout_width="@dimen/y72"
+        android:layout_height="@dimen/x68"
+        android:layout_below="@+id/hot_left_top_img"
+        android:layout_marginLeft="@dimen/y2"
+        android:layout_marginTop="@dimen/x3"
+        android:layout_toRightOf="@+id/hot_left_1_img"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/mm2"
+        android:tag="3"/>
+
+    <ImageView
+        android:id="@+id/hot_left_3_img"
+        android:layout_width="@dimen/y72"
+        android:layout_height="@dimen/x68"
+        android:layout_below="@+id/hot_left_top_img"
+        android:layout_marginLeft="@dimen/y2"
+        android:layout_marginTop="@dimen/x3"
+        android:layout_toRightOf="@+id/hot_left_2_img"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/mm2"
+        android:tag="4"/>
+
+    <!-- 大图右边第一列三个位置 -->
+
+    <ImageView
+        android:id="@+id/hot_center_1img"
+        android:layout_width="@dimen/y143"
+        android:layout_height="@dimen/x68"
+        android:layout_marginLeft="@dimen/y3"
+        android:layout_toRightOf="@+id/hot_left_top_img"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:nextFocusUp="@+id/title_hotgame"
+        android:scaleType="fitXY"
+        android:src="@drawable/mm1"
+        android:tag="5"/>
+
+    <ImageView
+        android:id="@+id/hot_center_2img"
+        android:layout_width="@dimen/y143"
+        android:layout_height="@dimen/x68"
+        android:layout_below="@+id/hot_center_1img"
+        android:layout_marginLeft="@dimen/y3"
+        android:layout_marginTop="@dimen/x3"
+        android:layout_toRightOf="@+id/hot_left_top_img"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/mm1"
+        android:tag="6"/>
+
+    <ImageView
+        android:id="@+id/hot_center_3img"
+        android:layout_width="@dimen/y143"
+        android:layout_height="@dimen/x68"
+        android:layout_below="@+id/hot_center_2img"
+        android:layout_marginLeft="@dimen/y3"
+        android:layout_marginTop="@dimen/x3"
+        android:layout_toRightOf="@+id/hot_left_top_img"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/mm4"
+        android:tag="7"/>
+
+    <!-- 大图右边第二列三个位置 -->
+
+    <ImageView
+        android:id="@+id/hot_right_1img"
+        android:layout_width="@dimen/y72"
+        android:layout_height="@dimen/x68"
+        android:layout_marginLeft="@dimen/y3"
+        android:layout_toRightOf="@+id/hot_center_1img"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:nextFocusUp="@+id/title_hotgame"
+        android:scaleType="fitXY"
+        android:src="@drawable/mm3"
+        android:tag="8"/>
+
+    <ImageView
+        android:id="@+id/hot_right_2img"
+        android:layout_width="@dimen/y72"
+        android:layout_height="@dimen/x68"
+        android:layout_below="@+id/hot_right_1img"
+        android:layout_marginLeft="@dimen/y3"
+        android:layout_marginTop="@dimen/x3"
+        android:layout_toRightOf="@+id/hot_center_1img"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/mm3"
+        android:tag="9"/>
+
+    <ImageView
+        android:id="@+id/hot_right_3img"
+        android:layout_width="@dimen/y72"
+        android:layout_height="@dimen/x68"
+        android:layout_below="@+id/hot_right_2img"
+        android:layout_marginLeft="@dimen/y3"
+        android:layout_marginTop="@dimen/x3"
+        android:layout_toRightOf="@+id/hot_center_1img"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/mm2"
+        android:tag="10"/>
+
+</com.example.library.TVMetroRelativeLayout>
